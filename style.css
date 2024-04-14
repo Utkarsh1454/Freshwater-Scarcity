@@ -1,0 +1,206 @@
+/* Reset default margin and padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Global styles */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+}
+
+/* Header */
+header {
+    background-color: #005a8d;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+nav ul {
+    list-style: none;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.2rem;
+}
+
+/* Main content */
+main {
+    padding: 20px 0;
+}
+
+section {
+    margin-bottom: 40px;
+    background-color: #fff;
+    padding: 40px 0;
+    text-align: center;
+}
+
+section h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+section .content {
+    max-width: 800px;
+    text-align: left;
+    margin-top: 30px;
+}
+
+section p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+section ul {
+    list-style: disc;
+    margin-left: 20px;
+    margin-bottom: 20px;
+}
+
+section ul li {
+    font-size: 1.2rem;
+    line-height: 1.6;
+}
+
+section img {
+    max-width: 100%;
+    border-radius: 10px;
+    margin-top: 30px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Footer */
+footer {
+    background-color: #005a8d;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+footer p {
+    font-size: 1.1rem;
+}
+
+footer nav ul {
+    display: flex;
+    justify-content: center;
+}
+
+footer nav ul li {
+    margin-right: 10px;
+}
+
+footer nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.1rem;
+}
+
+/* Specific section styles */
+section#about,
+section#hilly,
+section#plains,
+section#coastal,
+section#solutions,
+section#get-involved {
+    background-color: #f8f8f8;
+    padding: 50px 0;
+}
+
+section#about h2,
+section#hilly h2,
+section#plains h2,
+section#coastal h2,
+section#solutions h2,
+section#get-involved h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+section#about .container,
+section#hilly .container,
+section#plains .container,
+section#coastal .container,
+section#solutions .container,
+section#get-involved .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+section#about .content,
+section#hilly .content,
+section#plains .content,
+section#coastal .content,
+section#solutions .content,
+section#get-involved .content {
+    max-width: 800px;
+    text-align: left;
+    margin-top: 30px;
+}
+
+section#about .content p,
+section#hilly .content p,
+section#plains .content p,
+section#coastal .content p,
+section#solutions .content p,
+section#get-involved .content p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+section#about .content ul,
+section#hilly .content ul,
+section#plains .content ul,
+section#coastal .content ul,
+section#solutions .content ul,
+section#get-involved .content ul {
+    list-style: disc;
+    margin-left: 20px;
+    margin-bottom: 20px;
+}
+
+section#about .content ul li,
+section#hilly .content ul li,
+section#plains .content ul li,
+section#coastal .content ul li,
+section#solutions .content ul li,
+section#get-involved .content ul li {
+    font-size: 1.2rem;
+    line-height: 1.6;
+}
+
+section#about img,
+section#hilly img,
+section#plains img,
+section#coastal img,
+section#solutions img,
+section#get-involved img {
+    max-width: 100%;
+    border-radius: 10px;
+    margin-top: 30px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
