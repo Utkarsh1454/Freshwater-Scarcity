@@ -9,6 +9,10 @@
 body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
+    background-image: url('back.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
 }
 
 .container {
@@ -212,10 +216,18 @@ section#get-involved img {
     max-width: 100%;
     border-radius: 10px;
     margin-top: 30px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);    
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     display: block;
     margin-left: auto;
     margin-right: auto;
     width: 80%;
 }
-
+/* Specific section styles */
+section#about,
+section#hilly,
+section#plains,
+section#coastal,
+section#solutions,
+section#get-involved {
+    opacity: 85%;
+}
