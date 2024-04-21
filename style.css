@@ -1,15 +1,16 @@
-/* Reset default margin and padding */
+/* Reset default margin, padding, and box-sizing */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: bold;
 }
 
 /* Global styles */
 body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
-    background-image: url('back.jpg');
+    background-image: url('back4.jpg'); /* Replace 'your-new-background-image.jpg' with the path to your desired background image */
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -22,14 +23,14 @@ body {
 
 /* Header */
 header {
-    background-color: #005a8d;
+    background-color: #00598d00;
     color: #fff;
     padding: 20px 0;
     text-align: center;
 }
 
 header h1 {
-    font-size: 2.5rem;
+    font-size: 3rem; /* Increased header font size */
     margin-bottom: 10px;
 }
 
@@ -46,11 +47,16 @@ nav ul li a {
     color: #fff;
     text-decoration: none;
     font-size: 1.2rem;
+    transition: color 0.3s ease; /* Added smooth transition for link color change */
+}
+
+nav ul li a:hover {
+    color: #ffd700; /* Changed link color on hover */
 }
 
 /* Main content */
 main {
-    padding: 20px 0;
+    padding: 25px 50px;
 }
 
 section {
@@ -59,6 +65,12 @@ section {
     padding: 40px;
     text-align: center;
     background: linear-gradient(to bottom, #ffffff 0%, #f0f0f0 100%);
+    border-radius: 10px; /* Added border radius for section */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Added box shadow for section */
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
 }
 
 section h2 {
@@ -66,28 +78,18 @@ section h2 {
     margin-bottom: 20px;
 }
 
-section .container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-section .content {
-    max-width: 800px;
-    text-align: left;
-    margin-top: 30px;
-}
-
 section p {
     font-size: 1.2rem;
     line-height: 1.6;
     margin-bottom: 20px;
+    text-align: left; /* Align text left for better readability */
 }
 
 section ul {
     list-style: disc;
     margin-left: 20px;
     margin-bottom: 20px;
+    text-align: left; /* Align text left for better readability */
 }
 
 section ul li {
@@ -96,138 +98,71 @@ section ul li {
 }
 
 section img {
-    max-width: 100%;
+    max-width: 50%; /* Make images 50% of the page width */
     border-radius: 10px;
-    margin-top: 30px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
+    margin-right: 20px;
 }
 
 /* Footer */
 footer {
-    background-color: #005a8d;
-    color: #fff;
-    padding: 20px 0;
+    background-color: var(--raisin-black);
+    color: #ffffff;
+    font-family: var(--ff-inter);
+    padding: 40px 0;
     text-align: center;
 }
 
-footer p {
-    font-size: 1.1rem;
+.footer .container {
+    margin: 0 15px;
+    background-color: var(--eerie-black-3);
+    padding: 20px;
 }
 
-footer nav ul {
+.footer-list {
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
+    gap: 5px 40px;
+    margin-bottom: 15px;
 }
 
-footer nav ul li {
-    margin-right: 10px;
+.footer-link {
+    text-decoration: underline;
+    transition: var(--transition-1);
+    color: var(--white_50);
 }
 
-footer nav ul li a {
-    color: #fff;
+.footer-link:hover {
+    background-color: hsla(0, 0%, 100%, 0.05);
+}
+
+.copyright-link {
+    text-decoration: underline;
+    transition: var(--transition-1);
+}
+
+.copyright-link:hover {
+    background-color: hsla(0, 0%, 100%, 0.05);
+}
+
+
+/* Specific section styles */
+section#about,
+section#hilly,
+section#plains,
+section#coastal,
+section#solutions,
+section#get-involved {
+    opacity: 0.85;
+}
+
+/* Smooth scrolling */
+a[href^="#"] {
+    color: #005a8d; /* Changed link color */
     text-decoration: none;
-    font-size: 1.1rem;
+    transition: color 0.3s ease; /* Added smooth transition for link color change */
 }
 
-/* Specific section styles */
-section#about,
-section#hilly,
-section#plains,
-section#coastal,
-section#solutions,
-section#get-involved {
-    background-color: #f8f8f8;
-    padding: 50px 0;
-}
-
-section#about h2,
-section#hilly h2,
-section#plains h2,
-section#coastal h2,
-section#solutions h2,
-section#get-involved h2 {
-    font-size: 2.5rem;
-    margin-bottom: 20px;
-}
-
-section#about .container,
-section#hilly .container,
-section#plains .container,
-section#coastal .container,
-section#solutions .container,
-section#get-involved .container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-section#about .content,
-section#hilly .content,
-section#plains .content,
-section#coastal .content,
-section#solutions .content,
-section#get-involved .content {
-    max-width: 800px;
-    text-align: left;
-    margin-top: 30px;
-}
-
-section#about .content p,
-section#hilly .content p,
-section#plains .content p,
-section#coastal .content p,
-section#solutions .content p,
-section#get-involved .content p {
-    font-size: 1.2rem;
-    line-height: 1.6;
-    margin-bottom: 20px;
-}
-
-section#about .content ul,
-section#hilly .content ul,
-section#plains .content ul,
-section#coastal .content ul,
-section#solutions .content ul,
-section#get-involved .content ul {
-    list-style: disc;
-    margin-left: 20px;
-    margin-bottom: 20px;
-}
-
-section#about .content ul li,
-section#hilly .content ul li,
-section#plains .content ul li,
-section#coastal .content ul li,
-section#solutions .content ul li,
-section#get-involved .content ul li {
-    font-size: 1.2rem;
-    line-height: 1.6;
-}
-
-section#about img,
-section#hilly img,
-section#plains img,
-section#coastal img,
-section#solutions img,
-section#get-involved img {
-    max-width: 100%;
-    border-radius: 10px;
-    margin-top: 30px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 80%;
-}
-/* Specific section styles */
-section#about,
-section#hilly,
-section#plains,
-section#coastal,
-section#solutions,
-section#get-involved {
-    opacity: 85%;
+a[href^="#"]:hover {
+    color: #007bff; /* Changed link color on hover */
 }
